@@ -1,0 +1,376 @@
+
+/*---Google Fonts --*/
+@import url('https://fonts.googleapis.com/css?family=Asap:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,500,700');
+
+/* ----- IMPORTANT! -----*/
+/*--- Bootstrap Grid System ---*/
+/* Bootstrap uses a 12 grid structure. To creat a multiple column
+sections, devide 12 by the number of columns you want.
+After that limit its responsivenes by addind a media query for the different
+divices.*/
+
+/*--- Bootstrap Padding---*/
+ [class*="col-"] {
+    padding: 1rem;
+}
+.padding{
+  padding-bottom: 1.5rem;
+}
+/* 1rem=16px
+The rem unit sets the font-size relative to the browsers base font-size.*/
+.center{
+  display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: auto;
+}
+/*----------------------------------------------------------------------*/
+
+/* The Body section*/
+body {
+  height: 100%;
+  width: 100%;
+  color: #222;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*---Navigation Bar---*/
+.navbar{
+  padding: 0.8rem;
+}
+.navbar-brand{
+  font-family: 'Roboto Slab', serif;
+  padding-left: 30px;
+}
+.navbar-nav li{
+  font-size: 110%;
+  padding-right: 30px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.nav-link{
+  font-size: 1.1rem !important;
+  display: block;
+}
+
+/* The sticky class is added to the navbar with JS
+when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/*----------------------------------------------------------------------*/
+
+/*---Image Slider---*/
+.responsive {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+/* The captions inside the image sliders */
+.carousel-caption{
+  position: absolute;
+  font-family: 'Noto Sans KR', sans-serif;
+  top: 50%;
+  transform: translateY(-37%);
+}
+.carousel-caption h2{
+  font-size: 500%;
+  color: #181818;
+}
+.carousel-caption h3{
+  font-size: 200%;
+  font-weight: 500;
+  color: #0066ff;
+}
+.project_caption h1{
+  font-size: 500%;
+  font-weight: 500;
+  color: #0066ff;
+}
+.project_caption h3{
+  font-size: 200%;
+  font-weight: 500;
+  color: #0066ff;
+}
+.cv-caption h1{
+  font-size: 550%;
+  font-weight: 500;
+  color: #000000;
+  padding-bottom: 5px;
+}
+/*----------------------------------------------------------------------*/
+
+/*--- Parallax Background Image ---*/
+ .parallax {
+   /* The image*/
+   background-image: url("img/flow.jpg");
+
+   /* Full height */
+   height: 100%;
+   min-height: 500px;
+
+   /* The parallax scrolling effect */
+  margin: 0px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*----------------------------------------------------------------------*/
+
+/* Social Network Icons From FontAwesome (fa-...) */
+/* Note: The colors are in their hex values */
+.socialnet a{
+  font-size: 69px;
+  padding: 3rem;
+}
+.fa-facebook{
+  color: #3b5998;
+}
+.fa-twitter{
+  color: #00aced;
+}
+.fa-instagram{
+  color: #fbad50;
+}
+.fa-youtube{
+  color:#bb0000;
+}
+.fa-facebook:hover, .fa-twitter:hover,
+.fa-instagram:hover, .fa-youtube:hover{
+  color: #d5d5d5;
+}
+/*----------------------------------------------------------------------*/
+
+/*Headline Section (in My_Project Page)*/
+.project_welcome{
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.project_welcome hr{
+  border-top: 2px solid #000000;
+  width: 90%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+/*----------------------------------------------------------------------*/
+
+/*Cards Section (in My_Project Page)*/
+/*This is to make the images in the cards restricted but still responsive*/
+.responsive1{
+  width: 100%;
+    max-width: 330px;
+    height: auto;
+}
+.responsive2{
+  width: 100%;
+    max-width: 282px;
+    height: auto;
+}
+/*This class is added so that the buttons that link to a diffrent part of the
+page will work with the fixed navbar without compromise*/
+.anchor{
+  display: block;
+  height: 115px; /*same height as header*/
+  margin-top: -115px; /*same height as header*/
+  visibility: hidden;
+}
+/*----------------------------------------------------------------------*/
+
+/*ICONS Section (in My_Project Page)*/
+.fa-code{
+  color: #ff9933;
+}
+.fa-bold{
+  color:#563d7c;
+}
+.fa-css3{
+  color: #2163af;
+}
+.fa-python{
+  color: #3366ff;
+}
+.fa-atom{
+  color:#33cc33;
+}
+.fa-java{
+  color: #cc0000;
+}
+.fa-code, .fa-bold, .fa-css3, .fa-java, .fa-python, .fa-atom{
+  font-size:4em;
+  margin:1rem;
+}
+
+/*----------------------------------------------------------------------*/
+
+/*Two Column Section (in My_Project Page)*/
+.responsive3{
+  width: 100%;
+    max-width: 630px;
+    height: auto;
+}
+/*----------------------------------------------------------------------*/
+
+/*Headline Section (in My_CV Page)*/
+.cv_welcome{
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.cv_welcome hr{
+  border-top: 2px solid #b4b4b4;
+  width: 90%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+/*----------------------------------------------------------------------*/
+
+/*CV Section (in My_CV Page)*/
+.colpadding{
+  padding-left:230px
+}
+.col1 hr{
+  border-top: 2px solid #000000;
+}
+.col2 p {
+  width: 75%;
+  margin: 0 auto;
+  margin-left: 0;
+}
+.col2 li {
+  width: 75%;
+  margin: 0 auto;
+  margin-left: 0;
+}
+.col2 hr{
+border-top: 2px solid #000000;
+width: 75%;
+margin-left: 0;
+}
+/*----------------------------------------------------------------------*/
+
+/* GOOGLE MAPS */
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 35%;
+}
+.iframe-container iframe{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+/*----------------------------------------------------------------------*/
+
+/* Footer */
+footer{
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top:32px;
+}
+hr.light{
+  border-top: 1px solid #d5d5d5;
+  width:75%;
+  margin-top: 13px;
+  margin-bottom: 16px;
+}
+/*----------------------------------------------------------------------*/
+
+/*---Media Queries --*/
+/*
+Extra small (xs) devices (phones in portrait mode, less than 576px)
+No media query since this is the default in Bootstrap
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { }
+*/
+
+/*Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { }*/
+@media (max-width: 992px) {
+}
+
+/*Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { }*/
+@media (max-width: 768px) {
+  .carousel-caption{
+    top: 50%;
+  }
+  .carousel-caption h2{
+    font-size: 400%;
+  }
+  .carousel-caption h3{
+    font-size: 220%;
+  }
+  .project_caption h1{
+    font-size: 400%;
+  }
+  .project_caption h3{
+    font-size: 200%;
+  }
+  .project_caption .btn{
+    font-size: 90%;
+    padding: 12px 16px;
+  }
+  .cv-caption h1{
+    font-size: 450%;
+  }
+  .cv-caption .btn{
+    font-size: 90%;
+    padding: 12px 16px;
+  }
+
+    /*My_CV Page*/
+  .colpadding{
+    padding-left:0px
+  }
+}
+
+/*Small (sm) devices (phones in landscape mode, 576px and up)
+@media (min-width: 576px) { }*/
+@media (max-width: 576px) {
+  .carousel-caption{
+    top: 50%;
+  }
+  .carousel-caption h2{
+    font-size: 300%;
+  }
+  .carousel-caption h3{
+    font-size: 150%;
+  }
+  .project_caption h1{
+    font-size: 300%;
+  }
+  .project_caption h3{
+    font-size: 150%;
+  }
+  .project_caption .btn{
+    font-size: 90%;
+    padding: 8px 10px;
+  }
+  .cv-caption h1{
+    font-size: 350%;
+  }
+  .cv-caption .btn{
+    font-size: 90%;
+    padding: 8px 10px;
+  }
+
+  /*My_CV Page*/
+  .colpadding{
+    padding-left:0px
+  }
+}
